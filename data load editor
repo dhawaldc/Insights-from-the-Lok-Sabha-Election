@@ -1,0 +1,11 @@
+ElectionData:
+LOAD [Constituency],
+     [Const. No.],
+     [Leading Candidate],
+     [Leading Party],
+     [Trailing Candidate],
+     [Trailing Party],
+     [Margin],
+     [Status]
+FROM [lib://DataFiles/election_results_2024.csv]
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq);
